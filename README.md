@@ -1,6 +1,6 @@
 # Countdown Solver
 
-This project provides a powerful solver for the game **Countdown**. It generates and evaluates every possible arithmetic expression that can be built from a set of six numbers, using the operations `+`, `-`, `*`, and `/`, to reach a target number or get as close as possible. All possible *parenthesized* expressions are also considered. This means the solver explores every valid way to arrange parentheses and operations—so expressions like `(a+(b+c)*d)/(e-f)` are fully included.
+This project provides a solver for the game **Countdown**. It generates and evaluates every possible arithmetic expression that can be built from a set of six numbers, using the operations `+`, `-`, `*`, and `/`, to reach a target number or get as close as possible. All possible *parenthesized* expressions are also considered. This means the solver explores every valid way to arrange parentheses and operations—so expressions like `(a+(b+c)*d)/(e-f)` are fully included.
 
 ---
 
