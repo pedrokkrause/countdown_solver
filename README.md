@@ -1,6 +1,6 @@
 # Countdown Solver
 
-This project provides a solver for the game **Countdown**. It generates and evaluates every possible arithmetic expression that can be built from a set of six numbers, using the operations `+`, `-`, `*`, and `/`, to reach a target number or get as close as possible. All possible *parenthesized* expressions are also considered. This means the solver explores every valid way to arrange parentheses and operations—so expressions like `(a+(b+c)*d)/(e-f)` are fully included.
+This project provides a solver for the game **Countdown**. First, every possible arithmetic expression that can be built from a set of six numbers, using the operations `+`, `-`, `*`, and `/`, are generated. Expressions with parenthesis, like `(a+(b+c)*d)/(e-f)`, are also fully included. The solver then uses this pregenerated set of expressions to compute every possible value from 6 provided numbers, finding the one closest to the given target.
 
 ---
 
@@ -13,7 +13,7 @@ This project provides a solver for the game **Countdown**. It generates and eval
 * **What are they?**
   A minimal set of “expression templates” (distinct forms with parentheses and operations, but without fixed numbers).
 * **How are they used?**
-  For each puzzle, the solver tests every permutation of the input numbers (720 for six numbers) against each compacted template. Since there are 3,444 compacted expressions, this gives at most a total of 3,444*6! = 2,479,680 evaluations.
+  For each puzzle, the solver tests every permutation of the input numbers (720 for six numbers) against each compacted template. Since there are 3,444 compacted expressions, this gives at most a total of 3,444*720 = 2,479,680 evaluations.
   
   *Example*: For the template `a+b+c+d+e+f`, all possible orders of the six numbers are tried—even though all permutations return the same value for this particular template.
 * **Efficiency:**
